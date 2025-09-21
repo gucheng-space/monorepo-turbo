@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    /* 你原来的配置 */
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    /* 新增一行：引入微信小程序官方类型 */
+    "types": ["miniprogram-api-typings"]
+  }
+}

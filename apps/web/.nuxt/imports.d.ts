@@ -28,3 +28,5 @@ export { withCtx, withDirectives, withKeys, withMemo, withModifiers, withScopeId
 export { requestIdleCallback, cancelIdleCallback } from '#app/compat/idle-callback';
 export { setInterval } from '#app/compat/interval';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
+export { defineStore, acceptHMRUpdate, usePinia, storeToRefs } from '../../../node_modules/.pnpm/@pinia+nuxt@0.11.2_magicast@0.3.5_pinia@3.0.3_typescript@5.9.2_vue@3.5.21_typescript@5.9.2__/node_modules/@pinia/nuxt/dist/runtime/composables';
+export { useNuxtDevTools } from '../../../node_modules/.pnpm/@nuxt+devtools@2.6.5_vite@7.1.6_@types+node@24.5.2_jiti@2.5.1_terser@5.44.0_yaml@2.8.1__vue@3.5.21_typescript@5.9.2_/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
