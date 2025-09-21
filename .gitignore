@@ -1,0 +1,80 @@
+# ========== 通用 ==========
+node_modules/
+dist/
+build/
+*.log*
+*.pid
+*.seed
+*.pid.lock
+.npm
+.yarn-integrity
+.pnpm-debug.log*
+.pnpm-store/
+
+# ========== 系统 ==========
+.DS_Store
+Thumbs.db
+desktop.ini
+*$py.class
+*.so
+*.dylib
+*.dll
+
+# ========== IDE ==========
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+*~
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# ========== 环境 / 机密 ==========
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.pfx
+
+# ========== uni-app 各端发行包（按需保留） ==========
+# 小程序
+unpackage/dist/build/mp-weixin/
+unpackage/dist/build/mp-alipay/
+unpackage/dist/build/mp-baidu/
+unpackage/dist/build/mp-toutiao/
+unpackage/dist/build/mp-lark/
+unpackage/dist/build/mp-qq/
+unpackage/dist/build/mp-kuaishou/
+unpackage/dist/build/mp-xhs/
+# App
+unpackage/dist/build/app-plus/
+unpackage/dist/build/app-harmony/
+# H5
+unpackage/dist/build/h5/
+# 快应用
+unpackage/dist/build/quickapp-webview/
+# 自动化测试报告
+unpackage/dist/build/.tmp/
+unpackage/dist/dev/.tmp/
+
+# ========== monorepo 额外 ==========
+# changesets
+.changeset/*.md
+!.changeset/README.md
+!.changeset/config.json
+
+# turbo / nx
+.turbo/
+.nx/
+
+# lerna
+lerna-debug.log*
+
+# ========== 可选：锁文件（团队约定统一再开） ==========
+# pnpm-lock.yaml
+# yarn.lock
+# package-lock.json
