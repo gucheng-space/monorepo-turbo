@@ -73,8 +73,41 @@ unpackage/dist/dev/.tmp/
 
 # lerna
 lerna-debug.log*
-.nuxt
 # ========== 可选：锁文件（团队约定统一再开） ==========
+# pnpm-lock.yaml
+# yarn.lock
+# package-lock.json
+
+
+# ========== monorepo 额外 ==========
+# changesets
+.changeset/*.md
+!.changeset/README.md
+!.changeset/config.json
+
+# turbo / nx
+.turbo/
+.nx/
+
+# lerna
+lerna-debug.log*
+
+# ========== Nuxt 3/4 ==========
+# 生成目录（build / generate）
+.nuxt/
+.output/
+.nitro/
+.nuxt-*
+# 缓存 & 临时
+.cache/
+*.log*
+nitro.json
+# 本地环境
+.env
+.env.*
+!.env.example
+!.env.*.example
+# 锁文件（如需统一，可打开注释）
 # pnpm-lock.yaml
 # yarn.lock
 # package-lock.json
