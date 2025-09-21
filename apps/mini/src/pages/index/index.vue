@@ -5,8 +5,8 @@
       <text class="title">{{ title }}</text>
     </view>
     <view class="title">
-      <text>你猜猜这个是什么</text>
-      <text>你猜猜这个是什么</text>
+      <text>你猜猜这个是什么asdsad</text>
+      <text>你爹</text>
     </view>
   </view>
 </template>

@@ -73,7 +73,7 @@ unpackage/dist/dev/.tmp/
 
 # lerna
 lerna-debug.log*
-
+.nuxt
 # ========== 可选：锁文件（团队约定统一再开） ==========
 # pnpm-lock.yaml
 # yarn.lock

@@ -6,14 +6,14 @@ type Decorate<T extends Record<string, any>> = { [K in keyof T as K extends stri
 type InjectionType<A extends Plugin> = A extends {default: Plugin<infer T>} ? Decorate<T> : unknown
 
 type NuxtAppInjections = 
-  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__3bb64725e3c35dbdf2e15bfb1e33c52e/node_modules/nuxt/dist/app/plugins/revive-payload.client.js")> &
-  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__3bb64725e3c35dbdf2e15bfb1e33c52e/node_modules/nuxt/dist/head/runtime/plugins/unhead.js")> &
-  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__3bb64725e3c35dbdf2e15bfb1e33c52e/node_modules/nuxt/dist/app/plugins/router.js")> &
-  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__3bb64725e3c35dbdf2e15bfb1e33c52e/node_modules/nuxt/dist/app/plugins/payload.client.js")> &
-  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__3bb64725e3c35dbdf2e15bfb1e33c52e/node_modules/nuxt/dist/app/plugins/navigation-repaint.client.js")> &
-  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__3bb64725e3c35dbdf2e15bfb1e33c52e/node_modules/nuxt/dist/app/plugins/check-outdated-build.client.js")> &
-  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__3bb64725e3c35dbdf2e15bfb1e33c52e/node_modules/nuxt/dist/app/plugins/revive-payload.server.js")> &
-  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__3bb64725e3c35dbdf2e15bfb1e33c52e/node_modules/nuxt/dist/app/plugins/chunk-reload.client.js")>
+  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__9fa213946641ca991807d90b694ebb54/node_modules/nuxt/dist/app/plugins/revive-payload.client.js")> &
+  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__9fa213946641ca991807d90b694ebb54/node_modules/nuxt/dist/head/runtime/plugins/unhead.js")> &
+  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__9fa213946641ca991807d90b694ebb54/node_modules/nuxt/dist/app/plugins/router.js")> &
+  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__9fa213946641ca991807d90b694ebb54/node_modules/nuxt/dist/app/plugins/payload.client.js")> &
+  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__9fa213946641ca991807d90b694ebb54/node_modules/nuxt/dist/app/plugins/navigation-repaint.client.js")> &
+  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__9fa213946641ca991807d90b694ebb54/node_modules/nuxt/dist/app/plugins/check-outdated-build.client.js")> &
+  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__9fa213946641ca991807d90b694ebb54/node_modules/nuxt/dist/app/plugins/revive-payload.server.js")> &
+  InjectionType<typeof import("../../../../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@2.5.1_@types+node@24.5.2_@vue+compiler-sfc@3.5.21_db0@0.3.2__9fa213946641ca991807d90b694ebb54/node_modules/nuxt/dist/app/plugins/chunk-reload.client.js")>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
