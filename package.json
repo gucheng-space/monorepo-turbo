@@ -8,6 +8,13 @@
   "author": "gucheng",
   "packageManager": "pnpm@10.16.1",
   "devDependencies": {
-    "miniprogram-api-typings": "^4.1.0"
+    "@dcloudio/types": "^3.4.21",
+    "miniprogram-api-typings": "^4.1.0",
+    "vite-plugin-mock-dev-server": "^1.9.3"
+  },
+  "dependencies": {
+    "destr": "^2.0.5",
+    "ofetch": "^1.4.1",
+    "ufo": "^1.6.1"
   }
 }

@@ -1,9 +1,6 @@
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png" />
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-    </view>
     <view class="title">
       <text>你猜猜这个是什么asdsad</text>
       <text>你爹</text>
@@ -12,8 +9,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-const title = ref("Hello");
+import { onMounted } from "vue";
+onMounted(() => {
+  uni.request({
+    url: "/api/goods",
+    method: "GET",
+    success: (res) => {
+      console.log("mock 数据", res.data); // 这里应该能打印出 goodsList
+    },
+  });
+});
 </script>
 
 <style>

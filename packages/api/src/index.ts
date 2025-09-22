@@ -4,9 +4,7 @@ import type { GoodsItem, GoodsDetail, CartItem } from "@acme/types";
 // 运行时自动识别 baseURL
 const isMp = typeof wx !== "undefined" && !!wx.getStorageSync;
 
-const baseURL = isMp
-  ? "https://mock.xxx.com" // 小程序可访问的 https 白名单
-  : "https://mock.xxx.com"; // Web 可走同域代理，先写同一个
+const baseURL = "/api";
 
 const api = $fetch.create({
   baseURL,

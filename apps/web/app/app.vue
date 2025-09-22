@@ -5,8 +5,8 @@
   </div>
 </template>
 
-<script setup>
-import { useGoodsStore } from "@acme/stores/src/goods";
+<script setup lang="ts">
+import { useGoodsStore } from "@acme/stores";
 const store = useGoodsStore();
 onMounted(async () => {
   await store.load();

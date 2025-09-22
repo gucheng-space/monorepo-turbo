@@ -2,7 +2,7 @@
   "name": "@acme/stores",
   "version": "0.0.0",
   "type": "module",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
